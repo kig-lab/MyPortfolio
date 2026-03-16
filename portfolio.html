@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
+  <!-- Add Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/baca39cf9a.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <div class="container">
+    <!-- Navigation -->
+    
+    <nav>
+      <h2 class="logo"></h2>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+   
+    <!-- Hero Section -->
+    <div class="content">
+      <div class="text">
+        <h1 style="text-align: center;margin-top: 25px;">Hello, I'm <span>Michelle Kigen</span></h1>
+        <p class="title">WELCOME TO MY PORTFOLIO</p>
+        <p>Web Developer || Designer || Machine Learning Enthusiast</p>
+      </div>
+      <img src="pic2.jpg" style="width: 30%; height: 50%;">
+    </div>
+      
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="pic2.jpg" alt="About Image">
+        </div>
+        <div class="about-col-2">
+          <h2 class="sub-title">About Me</h2>
+          <p>I am interested in machine learning and artificial intelligence, with a growing focus on mental health technology. I enjoy exploring how data and intelligent systems can be used to support wellbeing and solve real-world problems.</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link"  onclick ="opentab('skills',event)">Skills</p>
+            <p class="tab-links"  onclick="opentab('experience', event)">Experience</p>
+            <p class="tab-links"  onclick="opentab('education', event)">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Web Development</span><br>HTML, CSS, JavaScript</li>
+              <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+              <li><span>Machine Learning</span><br>Python, Scikit-Learn</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Computer Society of Kirinyaga</span><br>Frontend Developer (2024 - current)</li>
+              <li><span>Kechei Centre, Iten</span><br>Virtual Assistant(2025)</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>Kirinyaga University</span><br>Bsc in Software Engineering (2024–2028)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <h2 class="sub-title">My Services</h2>
+      <div class="services-list">
+        <div class="webdev">
+            <i class="fa-solid fa-code"></i>
+          <h2>Web Development</h2>
+          <p>Building responsive and optimized websites using HTML, CSS, and JS.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div class="design">
+          <i class="fas fa-paint-brush"></i>
+          <h2>Design</h2>
+          <p>Creating sleek and user-friendly UI/UX designs for mobile and web apps.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div class="machine">
+          <i class="fas fa-brain"></i>
+          <h2>Machine Learning</h2>
+          <p>Developing ML models for data-driven applications using Python.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2 class="sub-title">My Projects</h2>
+      <div class="project-list">
+        <div class="project">
+          <img src="Front End Development.jpeg" alt="Project 1">
+          <div class="layer">
+            <h1>Front End Design</h1>
+            <p>A web application for task management using HTML, CSS, and JS.</p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="Elearning.jpeg" alt="Project 2">
+          <div class="layer">
+            <h1>Academic Hub</h1>
+            <p>Portfolio website showcasing personal work and skills.</p>
+            <a href="https://github.com/karmaforderrick88/VB-Simple-Currency-Converter"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="AI.jpeg" alt="Project 3">
+          <div class="layer">
+            <h1>Machine Learning and AI</h1>
+            <p>ML-based predictive analysis dashboard.</p>
+            <a href="https://github.com/kig-lab/PYTHON-"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="button">See More</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2 class="sub-title">Contact Me</h2>
+      <div class="row">
+        <div class="contact-left">
+          <p><i class="fas fa-envelope"></i> michelle.kigen@outlook.com <span>kigenmichelle5@gmail.com</span></p>
+          <p><i class="fas fa-phone-alt"></i> +254 72211316</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/kig-lab"><i class="fa-brands fa-square-github"></i></a>
+          </div>
+          <a href="greencard.jpg" download class="button button2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required><br>
+            <input type="email" name="email" placeholder="Your Email" required><br>
+            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="button button2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="copyright">
+    <p>Copyright @ Michelle. 2025<i class="fa-solid fa-face-smile"></i></p>
+  </div>
+  <script src = "https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src = "config.js"></script>
+  <script>
+    (function() {
+      emailjs.init(EMAIL_CONFIG.PUBLIC_KEY);
+    })();
+    </script>
+   <script src="portfolio.js"></script>
+</body>
+</html>
