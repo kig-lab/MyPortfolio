@@ -12,6 +12,16 @@ function opentab(tabname, event){
   document.getElementById(tabname).classList.add("active-tab");
 }
 
+var navLinks = document.getElementById("nav-links");
+
+function openMenu(){
+    navLinks.style.left = "0";
+}
+
+function closeMenu(){
+    navLinks.style.left = "-200px";
+}
+
 //CONTACT FORM EMAIL LOGIC
 document.getElementById("contact-form").addEventListener("submit", function(e) {
   e.preventDefault();  //Prevents the page from refreshing so that js can handle the background data submission

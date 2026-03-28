@@ -14,11 +14,15 @@
     
     <nav>
       <h2 class="logo"></h2>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+       <!-- MENU ICON -->
+  <i class="fas fa-bars" onclick="openMenu()" id="menu-icon"></i>
+      <ul id="nav-links">
+        <li><a href="#about" onclick="closeMenu()">About</a></li>
+        <li><a href="#services" onclick="closeMenu()">Services</a></li>
+        <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+        <!-- CLOSE BUTTON -->
+    <i class="fas fa-times" onclick="closeMenu()"></i>
       </ul>
     </nav>
 
@@ -135,7 +139,7 @@
           <p><i class="fas fa-envelope"></i> michelle.kigen@outlook.com <span>kigenmichelle5@gmail.com</span></p>
           <p><i class="fas fa-phone-alt"></i> +254 72211316</p>
           <div class="social-icons">
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/michelle-chemutai-aa427435a"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://github.com/kig-lab"><i class="fa-brands fa-square-github"></i></a>
           </div>
           <a href="greencard.jpg" download class="button button2">Download CV</a>
